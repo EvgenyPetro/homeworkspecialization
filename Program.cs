@@ -3,7 +3,7 @@ string[] arr1 = { "hello", "2", "world", ":-)" };
 string[] arr2 = { "1234", "1567", "-2", "computer sience" };
 string[] arr3 = { "Russia", "Denmark", "Kazan" };
 
-string[] GetNewArray(String[] array)
+string[] GetShortArray(String[] array)
 {
     string[] tempArray = new string[array.Length];
     int temp = 0;
@@ -29,6 +29,6 @@ void PrintArray(string[] array)
     Console.WriteLine($"[{String.Join(", ", array)}]");
 }
 
-PrintArray(GetNewArray(arr1));
-PrintArray(GetNewArray(arr2));
-PrintArray(GetNewArray(arr3));
+PrintArray(GetShortArray(arr1));
+PrintArray(GetShortArray(arr2));
+PrintArray(GetShortArray(arr3));
